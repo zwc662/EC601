@@ -1,0 +1,77 @@
+<!--
+
+/*
+ *
+ * Copyright 2013 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+
+
+<!-- Copy and paste here the "Sign-in button javascript" you downloaded from Developer Console as gitkit-signin-button.html -->
+
+<script type="text/javascript" src="http://www.gstatic.com/authtoolkit/js/gitkit.js"></script>
+<link type=text/css rel=stylesheet href="http://www.gstatic.com/authtoolkit/css/gitkit.css" />
+<script type=text/javascript>
+  window.google.identitytoolkit.signInButton(
+    '#navbar', // accepts any CSS selector
+    {
+      widgetUrl: "widget.html",
+      signOutUrl: "/",
+    }
+  );
+</script>
+
+<!-- End configuration -->
+
+</head>
+<body>
+
+<!-- End identity toolkit widget -->
+
+ <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<p>This page is from the google sample on GitHub.</p>
+        <p>But It's too ugly.</p>	
+	<p>And your browser may not support the following pages,</p>
+        <p>my Edge on Win10, for example, doesn't support.</p>
+	<p>Please use chrome</p>
+      
+      </div>
+
+    </div> <!-- /container -->
+
+<!-- Include the sign in button widget with the matching 'navbar' id -->
+<div id="navbar"></div>
+</body>
+</html>

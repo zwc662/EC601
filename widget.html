@@ -1,0 +1,83 @@
+<!--
+
+/*
+ *
+ * Copyright 2013 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+<!-- Copy and paste here the "Widget javascript" you downloaded from Developer Console as gitkit-widget.html -->
+<!-- Note: To support Yahoo, you will need to replace the 'JAVASCRIPT_ESCAPED_POST_BODY' with '{{ POST_BODY }}' as shown below -->
+<script type="text/javascript" src="http://www.gstatic.com/authtoolkit/js/gitkit.js"></script>
+<link type="text/css" rel="stylesheet" href="http://www.gstatic.com/authtoolkit/css/gitkit.css" />
+
+<script type="text/javascript">
+  var config = {
+      apiKey: 'API_KEY',
+      signInSuccessUrl: '/',
+      idps: ["google"],
+      idpButtons: 1,
+      oobActionUrl: '/',
+      siteName: 'this site'
+  };
+  // The HTTP POST body should be escaped by the server to prevent XSS
+  window.google.identitytoolkit.start(
+      '#gitkitWidgetDiv', // accepts any CSS selector
+      config,
+      '{{ POST_BODY }}');
+</script>
+<!-- End modification -->
+
+
+
+</head>
+<body>
+
+<!-- Include the sign in page widget with the matching 'gitkitWidgetDiv' id -->
+<div id="gitkitWidgetDiv"></div>
+<!-- End identity toolkit widget -->
+
+ <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Login prompt may take a few seconds to load, but you can never log in even after it reveals.</h1>
+	<p>Using Chrome console, I have found some errors in the on-line .js files that the sample calls.</p>
+	<p>My javascript and HTML knowledge is below entry level, so be it...</p>	
+        <p>You can still see my web page through the link below</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="index_navbar.html" role="button">View my web page &raquo;</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+</body></html>
