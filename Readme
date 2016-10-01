@@ -1,0 +1,7 @@
+Use Index.html to start reviewing the web page.
+
+The login screen is from https://github.com/googlesamples/identity-toolkit-python.
+
+And the bootstrap template I use is the navbar-fixed-top.
+
+When reviewing the Web page locally, make sure that all files in this branch are in the same directory. Or some important files may not be loaded
